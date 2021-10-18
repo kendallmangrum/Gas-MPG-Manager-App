@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/submitBttn"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="submitData"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMPG" />
+
+    <EditText
+        android:id="@+id/etStationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Gas Station Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/etStationName"
+        app:layout_constraintTop_toBottomOf="@+id/etStationName" />
+
+    <EditText
+        android:id="@+id/etPricePerGallon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Price Per Gallon"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/etDate"
+        app:layout_constraintTop_toBottomOf="@+id/etDate" />
+
+    <EditText
+        android:id="@+id/etTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Total Price"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/etPricePerGallon"
+        app:layout_constraintTop_toBottomOf="@+id/etPricePerGallon" />
+
+    <EditText
+        android:id="@+id/etTotalGallons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Total Gallons"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/etTotalPrice"
+        app:layout_constraintTop_toBottomOf="@+id/etTotalPrice" />
+
+    <EditText
+        android:id="@+id/etMPG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="MPG"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/etTotalGallons"
+        app:layout_constraintTop_toBottomOf="@+id/etTotalGallons" />
+
+    <Button
+        android:id="@+id/viewHistoryBttn"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="viewHistory"
+        android:text="View History"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bttnThird" />
+
+    <Button
+        android:id="@+id/bttnThird"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="viewAverages"
+        android:text="View Averages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submitBttn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
